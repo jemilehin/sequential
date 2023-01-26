@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "RecruitmentPortal",
-    "slug": "RecruitmentPortal",
+    "name": "Sequential Jobs",
+    "slug": "sequential_jobs",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,10 +24,25 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.tomation.RecruitmentPortal",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3450e8fc-9a7e-4454-92ea-23f09057cace"
+      }
     }
   }
 }
